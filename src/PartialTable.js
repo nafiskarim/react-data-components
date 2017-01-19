@@ -33,15 +33,7 @@ export default class PartialTable extends Component {
                 )}
               </select>
             </div>
-            <div>
-              <label htmlFor="search-field">Search:</label>
-              <input
-                id="search-field"
-                type="search"
-                value={filterValues.globalSearch}
-                onChange={onFilter.bind(null, 'globalSearch')}
-              />
-            </div>
+            
           </div>
           <div className="col-xs-8">
             <Pagination

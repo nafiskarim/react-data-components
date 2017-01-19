@@ -33,11 +33,11 @@ export default class PartialTable extends Component {
                 )}
               </select>
             </div>
-            
+
           </div>
           <div className="col-xs-8">
             <Pagination
-              className="pagination pull-right"
+              className="pagination"
               currentPage={pageNumber}
               totalPages={totalPages}
               onChangePage={onPageNumberChange}

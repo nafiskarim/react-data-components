@@ -18,24 +18,8 @@ export default class PartialTable extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-xs-4">
-            <div>
-              <label htmlFor="page-menu">Page size:</label>
-              <select
-                id="page-menu"
-                value={pageSize}
-                onChange={onPageSizeChange}
-              >
-                {pageLengthOptions.map(opt =>
-                  <option key={opt} value={opt}>
-                    {opt === 0 ? 'All' : opt}
-                  </option>
-                )}
-              </select>
-            </div>
-
-          </div>
-          <div className="col-xs-8">
+          
+          <div className="col-xs-12">
             <Pagination
               className="pagination"
               currentPage={pageNumber}
